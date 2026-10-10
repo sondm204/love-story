@@ -11,11 +11,11 @@ export default function LoginPage() {
   
   // --- CONFIGURATION START ---
   // CHANGE THESE TO YOUR REAL VALUES!
-  const SECRET_NICKNAME = "bava"; 
+  const SECRET_NICKNAME = "linhtt"; 
   
   // IMPORTANT: HTML date inputs use YYYY-MM-DD format behind the scenes.
   // So for Dec 19, 2024, we must write it as "2024-12-19"
-  const FIRST_MEET_DATE = "2024-12-19"; 
+  const FIRST_MEET_DATE = "2024-04-26"; 
   // --- CONFIGURATION END ---
 
   const [inputName, setInputName] = useState('');
@@ -49,7 +49,7 @@ export default function LoginPage() {
       
     } else {
       // FAILURE
-      setError("Oops! That's not the right date or nickname 😢");
+      setError("Ôi! Biệt danh hoặc ngày gặp nhau chưa đúng rồi 😢");
       setTimeout(() => setError(''), 3000); // Clear error after 3s
     }
   };
@@ -77,10 +77,10 @@ export default function LoginPage() {
 
         {/* Use the cursive font for the heading */}
         <h1 className="text-4xl font-bold text-center text-rose-600 mb-2 font-dancing">
-          Locked for You
+          Dành Riêng Cho Em
         </h1>
         <p className="text-center text-gray-600 mb-8 text-sm font-sans">
-          Enter our special details to unlock your gift.
+          Nhập thông tin đặc biệt của chúng ta để mở món quà này nhé.
         </p>
 
         <form onSubmit={handleLogin} className="space-y-5">
@@ -88,12 +88,12 @@ export default function LoginPage() {
           {/* Nickname Input */}
           <div className="space-y-2">
             <label className="text-sm font-medium text-rose-700 flex items-center gap-2">
-              <Lock className="w-4 h-4" /> Secret Nickname
+              <Lock className="w-4 h-4" /> Biệt danh bí mật
             </label>
             <input 
               type="text" 
               required
-              placeholder="What do I call you?"
+              placeholder="Anh thường gọi em là gì?"
               // Explicit text-gray-900 to prevent white-on-white in dark mode
               className="w-full px-4 py-3 rounded-lg bg-white border border-pink-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition-all placeholder:text-gray-400 text-gray-900 font-sans"
               value={inputName}
@@ -104,7 +104,7 @@ export default function LoginPage() {
           {/* Date Input */}
           <div className="space-y-2">
             <label className="text-sm font-medium text-rose-700 flex items-center gap-2">
-              <Calendar className="w-4 h-4" /> The Day We Met
+              <Calendar className="w-4 h-4" /> Ngày chúng ta gặp nhau
             </label>
             <input 
               type="date" 
@@ -131,7 +131,7 @@ export default function LoginPage() {
             type="submit"
             className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
-            Unlock My Heart 🔓
+            Mở Khóa Trái Tim Anh 🔓
           </button>
         </form>
       </motion.div>

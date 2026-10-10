@@ -15,8 +15,8 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "For My Valentine ❤️",
-  description: "A surprise for someone special.",
+  title: "Dành Cho Người Anh Yêu ❤️",
+  description: "Một món quà bất ngờ dành cho người đặc biệt.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="vi">
       <body className={`${inter.variable} ${dancingScript.variable} font-sans antialiased`}>
         {/* The Music Player sits here, outside the page content so it never stops */}
         <MusicPlayer />

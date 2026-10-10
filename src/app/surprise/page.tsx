@@ -9,43 +9,43 @@ import { Heart, Star, Music, Coffee, ArrowDown, X } from 'lucide-react';
 const TIMELINE_EVENTS = [
   { 
     date: "", 
-    title: "First Day We Met", 
-    desc: "The day my life changed forever. I was nervous, you were perfect.", 
+    title: "Ngày Đầu Tiên Chúng Ta Gặp Nhau", 
+    desc: "Ngày cuộc đời anh thay đổi mãi mãi. Anh đã rất hồi hộp, còn em thì thật hoàn hảo.", 
     photo: "/First_meet.jpeg" 
   },
   { 
     date: "", 
-    title: "Happy Moments", 
-    desc: "That main moment when I knew you were the one. I still remember that day.", 
+    title: "Những Khoảnh Khắc Hạnh Phúc", 
+    desc: "Khoảnh khắc anh nhận ra em chính là người anh luôn tìm kiếm. Anh vẫn nhớ ngày hôm ấy.", 
     photo: "/Happy_moment.jpeg" 
   },
   { 
     date: "", 
-    title: "Hand tag", 
-    desc: "That cute moment when we held hands for the first time. I felt like I was in a dream.", 
+    title: "Lần Đầu Nắm Tay", 
+    desc: "Khoảnh khắc đáng yêu khi chúng ta lần đầu nắm tay nhau. Anh cứ ngỡ mình đang ở trong một giấc mơ.", 
     photo: "/tag.jpeg" 
   },
 ];
 
 const LOVE_REASONS = [
-  { icon: <Heart />, title: "Your Kindness", reason: "You treat everyone with such respect and love." },
-  { icon: <Star />, title: "Your Eyes", reason: "I could get lost in them for hours." },
-  { icon: <Music />, title: "Your Laugh", reason: "It's literally my favorite sound in the world." },
-  { icon: <Coffee />, title: "Your Support", reason: "You believe in me even when I don't believe in myself." },
+  { icon: <Heart />, title: "Sự Tử Tế Của Em", reason: "Em luôn đối xử với mọi người bằng sự tôn trọng và yêu thương." },
+  { icon: <Star />, title: "Đôi Mắt Của Em", reason: "Anh có thể đắm chìm trong đôi mắt ấy hàng giờ liền." },
+  { icon: <Music />, title: "Tiếng Cười Của Em", reason: "Đó chính là âm thanh anh yêu thích nhất trên đời." },
+  { icon: <Coffee />, title: "Sự Đồng Hành Của Em", reason: "Em tin tưởng anh ngay cả khi chính anh còn nghi ngờ bản thân mình." },
 ];
 
 const BULLET_POINTS = [
-  "Your smile that lights up the heart 😊",
-  "Your cute madness when you are hungry 😄",
-  "Your endless support for my dreams 💪",
-  "The way you hug me tightly 🤗",
+  "Nụ cười của em làm trái tim anh bừng sáng 😊",
+  "Sự đáng yêu của em mỗi khi đói bụng 😄",
+  "Cách em luôn ủng hộ những ước mơ của anh 💪",
+  "Cách em ôm anh thật chặt 🤗",
 ];
 
 const FUTURE_PROMISES = [
-  "Voyage the world together 🗼",
-  "Build our dream home 🏠",
-  "Adopt a puppy 🐶",
-  "Grow old and grumpy together 👴👵"
+  "Cùng nhau đi khắp thế gian 🗼",
+  "Xây dựng ngôi nhà mơ ước của chúng ta 🏠",
+  "Cùng nhận nuôi một chú cún 🐶",
+  "Cùng nhau già đi, dù đôi lúc có hơi khó tính 👴👵"
 ];
 
 // ------------------------------------------------
@@ -57,17 +57,19 @@ export default function SurprisePage() {
   const [noButtonPos, setNoButtonPos] = useState({ top: '50%', left: '70%' });
   
   // --- UPDATED LOVE LETTER ---
-  const LOVE_LETTER = `My Dear bava !!!,
-   In a world that is often loud and cluttered, you are the quiet clarity I always return to.
+  const LOVE_LETTER = `Bava yêu dấu của anh,
 
-I find that the more I know you, the fewer words I actually need to describe how I feel. "I love you" is the simplest truth I own, and yet it carries the entire weight of my gratitude.
+Giữa một thế giới thường xuyên ồn ào và bộn bề, em là chốn bình yên mà anh luôn muốn trở về.
 
-Thank you for being my constant, "the imperfect perfect couple".
+Càng hiểu em, anh càng nhận ra mình không cần quá nhiều lời để diễn tả cảm xúc. “Anh yêu em” là điều giản dị và chân thành nhất trong tim anh, nhưng lại chứa đựng tất cả lòng biết ơn vì em đã đến bên đời anh.
 
-నీ నవ్వుల వెలుగులో నన్ను నేను మర్చిపోయా,
-నా ఊపిరి ఆగిపోయినా నీ జ్ఞాపకం వదలనన్నా. 
+Cảm ơn em vì luôn ở bên anh, để chúng ta trở thành một đôi không hoàn hảo nhưng hoàn hảo theo cách riêng của mình.
 
-Forever yours Bujiii ❤️`;
+Trong ánh sáng từ nụ cười của em, anh quên mất cả chính mình.
+Dù hơi thở có ngừng lại, anh vẫn sẽ không bao giờ buông bỏ những ký ức về em.
+
+Mãi mãi thuộc về em,
+Bujiii ❤️`;
   // ---------------------------
 
   useEffect(() => {
@@ -127,7 +129,7 @@ Forever yours Bujiii ❤️`;
             className="absolute bottom-10 text-rose-400 flex flex-col items-center gap-2 cursor-pointer"
             onClick={() => document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <span className="text-sm font-sans font-medium tracking-widest uppercase">Scroll Down</span>
+            <span className="text-sm font-sans font-medium tracking-widest uppercase">Cuộn xuống</span>
             <ArrowDown />
           </motion.div>
         )}
@@ -136,7 +138,7 @@ Forever yours Bujiii ❤️`;
       {/* SECTION 2: MEMORY LANE TIMELINE */}
       {isFinishedTyping && (
         <section id="timeline" className="py-20 px-4 max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-rose-600 mb-16 font-dancing">Our Memory Lane</h2>
+          <h2 className="text-4xl font-bold text-center text-rose-600 mb-16 font-dancing">Hành Trình Kỷ Niệm</h2>
           <div className="relative">
             <div className="absolute left-4 md:left-1/2 h-full w-1 bg-rose-200 transform -translate-x-1/2"></div>
             {TIMELINE_EVENTS.map((event, index) => (
@@ -173,7 +175,7 @@ Forever yours Bujiii ❤️`;
       {isFinishedTyping && (
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-4xl font-bold text-center text-rose-600 mb-16 font-dancing">Why I Love You</h2>
+            <h2 className="text-4xl font-bold text-center text-rose-600 mb-16 font-dancing">Vì Sao Anh Yêu Em</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
               {LOVE_REASONS.map((item, index) => (
                 <div key={index} className="group h-64 perspective-1000 cursor-pointer">
@@ -181,7 +183,7 @@ Forever yours Bujiii ❤️`;
                     <div className="absolute inset-0 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex flex-col items-center justify-center text-white backface-hidden">
                       <div className="mb-4 scale-150">{item.icon}</div>
                       <h3 className="text-xl font-bold">{item.title}</h3>
-                      <p className="text-xs mt-2 opacity-80">(Hover to see)</p>
+                      <p className="text-xs mt-2 opacity-80">(Di chuột để xem)</p>
                     </div>
                     <div className="absolute inset-0 bg-white border-2 border-rose-200 rounded-2xl flex items-center justify-center p-6 text-center rotate-y-180 backface-hidden">
                       <p className="text-rose-600 font-medium font-dancing text-xl">{item.reason}</p>
@@ -191,7 +193,7 @@ Forever yours Bujiii ❤️`;
               ))}
             </div>
             <div className="max-w-2xl mx-auto bg-rose-50 p-8 rounded-3xl shadow-inner">
-               <h3 className="text-2xl font-bold text-center text-rose-800 mb-6">Things That Make You Special</h3>
+               <h3 className="text-2xl font-bold text-center text-rose-800 mb-6">Những Điều Khiến Em Thật Đặc Biệt</h3>
                <ul className="space-y-4">
                  {BULLET_POINTS.map((point, i) => (
                    <motion.li 
@@ -214,7 +216,7 @@ Forever yours Bujiii ❤️`;
       {/* SECTION 4: FUTURE PROMISES */}
       {isFinishedTyping && (
         <section className="py-20 px-6 max-w-4xl mx-auto text-center">
-           <h2 className="text-4xl font-bold text-rose-600 mb-12 font-dancing">Our Future Together</h2>
+           <h2 className="text-4xl font-bold text-rose-600 mb-12 font-dancing">Tương Lai Của Chúng Ta</h2>
            <div className="flex flex-wrap justify-center gap-4">
              {FUTURE_PROMISES.map((promise, i) => (
                <motion.div 
@@ -238,7 +240,7 @@ Forever yours Bujiii ❤️`;
             className="text-center z-20"
           >
             <h2 className="text-5xl md:text-7xl font-bold text-rose-600 mb-12 font-dancing drop-shadow-sm">
-              Will you be my Valentine?
+              Em sẽ là Valentine của anh nhé?
             </h2>
 
             <div className="flex gap-8 justify-center items-center relative h-32">
@@ -246,7 +248,7 @@ Forever yours Bujiii ❤️`;
                 onClick={handleYesClick}
                 className="bg-rose-500 hover:bg-rose-600 text-white text-2xl font-bold py-4 px-10 rounded-full shadow-2xl transform transition hover:scale-110 active:scale-95 ring-4 ring-rose-200"
               >
-                YES! 💖
+                ĐỒNG Ý! 💖
               </button>
 
               <button
@@ -255,7 +257,7 @@ Forever yours Bujiii ❤️`;
                 style={{ position: 'fixed', top: noButtonPos.top, left: noButtonPos.left, transition: 'all 0.3s ease' }}
                 className="bg-gray-300 text-gray-600 text-xl font-bold py-3 px-8 rounded-full opacity-80 hover:opacity-100"
               >
-                No 🙄
+                Không 🙄
               </button>
             </div>
           </motion.div>
@@ -297,17 +299,17 @@ Forever yours Bujiii ❤️`;
                 </motion.div>
               </div>
 
-              <h3 className="text-4xl font-bold text-rose-600 font-dancing mb-4">Yay! I Knew It! ❤️</h3>
+              <h3 className="text-4xl font-bold text-rose-600 font-dancing mb-4">Anh Biết Mà! ❤️</h3>
               
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Thank you for making me the happiest person alive. I promise to love you more every single day.
+                Cảm ơn em vì đã khiến anh trở thành người hạnh phúc nhất. Anh hứa sẽ yêu em nhiều hơn sau mỗi ngày.
               </p>
 
               <button
                 onClick={() => setShowSuccess(false)}
                 className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-transform"
               >
-                Let's Celebrate! 🥂
+                Cùng Ăn Mừng Nhé! 🥂
               </button>
             </motion.div>
           </div>

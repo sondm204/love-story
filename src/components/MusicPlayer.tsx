@@ -63,16 +63,16 @@ export default function MusicPlayer() {
     <div className="fixed bottom-4 right-4 z-50">
       {/* The Audio Element (Hidden) */}
       <audio ref={audioRef} loop preload="auto">
-        <source src="/music.mp3" type="audio/mpeg" />
-        <source src="/music.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
+        <source src="/bg-music.mp3" type="audio/mpeg" />
+        <source src="/bg-music.mp3" type="audio/mp3" />
+        Trình duyệt của bạn không hỗ trợ phát âm thanh.
       </audio>
       
       {/* The Toggle Button */}
       <button
         onClick={togglePlay}
         className="bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-xl border border-rose-200 hover:scale-110 transition-transform text-rose-500 hover:bg-rose-50 animate-bounce"
-        aria-label="Toggle Music"
+        aria-label={isPlaying ? "Tắt nhạc" : "Bật nhạc"}
       >
         {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
       </button>
